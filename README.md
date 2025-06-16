@@ -32,7 +32,7 @@ A storm event on **May 20, 2024** was analyzed:
 - Specific lake-breeze effects around **Lake Huron**, **Lake Erie**, **Lake Ontario**, and **Lake St. Clair** were examined.
 
 ![📍 _Figure: Radar snapshots from 8 p.m. to 10 p.m. UTC (May 20, 2024)_](radar/radar.gif)
-
+📍 _Figure: Radar snapshots from 8 p.m. to 10 p.m. UTC (May 20, 2024)_
 ---
 
 ## 🛰️ Methodology

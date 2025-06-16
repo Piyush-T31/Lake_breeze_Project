@@ -47,6 +47,8 @@ A storm event on **May 20, 2024** was analyzed:
 - **Output Interval:** 30 minutes
 
 ![WRF nested domain](High_res/wps_show_dom.png)
+
+<img src="https://raw.githubusercontent.com/Piyush-T31/Lake_breeze_Project/blob/283f1dcc31257494a1eb626ffffbd4db7071b775/High_res/wps_show_dom.png" width="600">
 📍 _Figure: WRF nested domain setup_  
 
 📍 _Figure: WRF surface temperature and wind field plots_  

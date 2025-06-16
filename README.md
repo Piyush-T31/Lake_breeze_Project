@@ -46,6 +46,8 @@ A storm event on **May 20, 2024** was analyzed:
 - **Spin-up Time:** 12 hours
 - **Output Interval:** 30 minutes
 
+![WRF nested domain](High\res/wps_show_dom.png)
+
 📍 _Figure: WRF nested domain setup_  
 📍 _Figure: WRF surface temperature and wind field plots_  
 📍 _Figure: Vertical wind plots at 500 m and 2 km_  

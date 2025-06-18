@@ -48,9 +48,10 @@ A storm event on **May 20, 2024** was analyzed:
 
 ![WRF nested domain](High_res/wps_show_dom.png)
 📍 _Figure: WRF nested domain setup_  
-
-📍 _Figure: WRF surface temperature and wind field plots_  
-📍 _Figure: Vertical wind plots at 500 m and 2 km_  
+![WRF T2 ws10](era5_init/t2_ws10/t2_ws10wrf.gif)
+📍 _Figure: WRF surface temperature at 2m and wind field plots at 10 m_  
+![WRF w500 ws500](era5_init/W_500/w500.gif)
+📍 _Figure: Vertical wind plot at 500 m with wind field plots at 500 m_  
 
 ### Pangu-Weather Model
 

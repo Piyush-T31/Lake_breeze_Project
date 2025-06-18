@@ -47,11 +47,11 @@ A storm event on **May 20, 2024** was analyzed:
 - **Output Interval:** 30 minutes
 
 ![WRF nested domain](High_res/wps_show_dom.png)
-📍 _Figure: WRF nested domain setup_  
+📍_Figure: WRF nested domain setup_  
 ![WRF T2 ws10](era5_init/t2_ws10/t2_ws10wrf.gif)
-📍 _Figure: WRF surface temperature at 2m and wind field plots at 10 m_  
+📍_Figure: WRF surface temperature at 2m and wind field plots at 10 m_  
 ![WRF w500 ws500](era5_init/W_500/w500.gif)
-📍 _Figure: Vertical wind plot at 500 m with wind field plots at 500 m_  
+📍_Figure: Vertical wind plot at 500 m with wind field plots at 500 m_  
 
 ### Pangu-Weather Model
 
@@ -60,6 +60,7 @@ A storm event on **May 20, 2024** was analyzed:
 - Uses hierarchical temporal aggregation (1h, 3h, 6h, 24h models)
 - Inference performed using ONNX models on both CPU and GPU
 
+![pangu transformer](pangu_data/3dest.png)
 📍 _Figure: Diagram of the 3DEST architecture_
 
 ### Inference Pipeline (Python)
@@ -101,10 +102,13 @@ hourly_surface_outputs )
 
 **Variable Validation**
 - Pangu-Weather’s temperature and wind forecasts were visually and statistically close to ERA5 reanalysis
-- Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) were used for evaluation
+- Mean Absolute Error (MAE) was used for evaluation
 
-📍 _Figure: Global temperature at 2m - Pangu vs ERA5_  
-📍 _Figure: MAE and RMSE plots_  
+![t2 mae gif](pangu_data/t2_pangu.png)
+📍 _Figure: Global temperature at 2m - Pangu vs ERA5 at the end of simulation (H-24)_  
+
+![t2 mae gif](pangu_data/mae_plot/mae_t2m.gif)
+📍 _Figure: Hourly MAE for global temperature at 2m_  
 
 
 

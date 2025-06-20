@@ -139,9 +139,9 @@ hourly_surface_outputs )
 
 📍 _Figure: T2 and wind at 10 m over Southern Ontario (WRF vs Pangu)_
 
-|          Updraft at 500m (WRF)           |            Divergence at 925 hPa (Pangu)             |
-| :--------------------------------------: | :--------------------------------------------------: |
-| ![ws10 london](era5_init/W_500/w500.gif) | ![t2 london](pangu_data/divergence plots/div925.gif) |
+|           Updraft at 500m (WRF)           |               Divergence at 925 hPa (Pangu)               |
+| :---------------------------------------: | :-------------------------------------------------------: |
+| ![W 500 london](era5_init/W_500/w500.gif) | ![div 500 london](pangu_data/divergence_plots/div925.gif) |
 
 📍 _Figure: Updraft for WRF and divergence for Pangu-Weather at ~500 m_
 

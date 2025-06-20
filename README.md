@@ -133,6 +133,28 @@ hourly_surface_outputs )
 - WRF showed finer lake breeze effects due to higher spatial resolution
 - Pangu-Weather showed strong convergence zones consistent with radar, despite lower resolution
 
+|           T at 2m with 10m winds (WRF)           |       T at 2m with 10m winds (Pangu)        |
+| :----------------------------------------------: | :-----------------------------------------: |
+| ![ws10 london](era5_init/t2_ws10/t2_ws10wrf.gif) | ![t2 london](pangu_data/t2m_w10/t2_w10.gif) |
+
+📍 _Figure: T2 and wind at 10 m over Southern Ontario (WRF vs Pangu)_
+
+|          Updraft at 500m (WRF)           |            Divergence at 925 hPa (Pangu)             |
+| :--------------------------------------: | :--------------------------------------------------: |
+| ![ws10 london](era5_init/W_500/w500.gif) | ![t2 london](pangu_data/divergence plots/div925.gif) |
+
+📍 _Figure: Updraft for WRF and divergence for Pangu-Weather at ~500 m_
+
+✅ Conclusion
+
+- **Pangu-Weather** is a promising, cost-effective DLWP model with competitive accuracy compared to WRF.
+
+- WRF, though computationally expensive, provides higher-resolution and more physically constrained simulations.
+
+- The lake-breeze did contribute to storm intensification, and both models demonstrated this to varying extents.
+
+- Key takeaways include the importance of initial conditions, physical parameterizations, and spatial resolution.
+
 ## 🇫🇷 Version Française
 
 # 🌀 Comparaison des Simulations de Brise de Lac entre WRF et Pangu-Weather

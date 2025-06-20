@@ -316,6 +316,7 @@ hourly_surface_outputs )
 ## 📁 Files Included
 
 Full report: [Research report](https://drive.google.com/file/d/18WIzc1xXRRxHLh7H8w5d9mEJgL81MVek/view?usp=sharing)
+Scripts: [Python code to run Pangu-Weather](pangu.ipynb)
 
 ## 🧠 Future Work
 

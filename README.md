@@ -32,6 +32,7 @@ A storm event on **May 20, 2024** was analyzed:
 - Specific lake-breeze effects around **Lake Huron**, **Lake Erie**, **Lake Ontario**, and **Lake St. Clair** were examined.
 
 ![_Figure: Radar snapshots from 6 p.m. to 12 a.m. UTC (May 20, 2024)_](radar/radar.gif)
+
 📍 _Figure: Radar snapshots from 6 p.m. to 12 a.m. UTC (May 20, 2024)_
 
 ---
@@ -139,10 +140,10 @@ hourly_surface_outputs )
 
 📍 _Figure: T2 and wind at 10 m over Southern Ontario (WRF vs Pangu)_
 
-![div 500 london](pangu_data/divergence_plots/div925.gif) |
+![div 500 london](pangu_data/divergence_plots/div925.gif)
 📍 _Figure: Divergence for Pangu-Weather over Southern Ontario at 925hPA (~500 m)_
 
-✅ Conclusion
+## ✅ Conclusion
 
 - **Pangu-Weather** is a promising, cost-effective DLWP model with competitive accuracy compared to WRF.
 
@@ -181,7 +182,8 @@ L’événement orageux du **20 mai 2024** a été analysé :
 - Les trajectoires des orages ont été étudiées à l’aide des radars d’ECCC.
 - Les effets spécifiques de brise de lac autour des **lacs Huron**, **Érié**, **Ontario** et **St. Clair** ont été examinés.
 
-📍 _Figure : Images radar de 20h à 22h UTC (20 mai 2024)_
+![Images radar](radar/radar.gif)
+📍 _Figure : Images radar de 6 p.m à 12 a.m UTC (20 mai 2024)_
 
 ---
 

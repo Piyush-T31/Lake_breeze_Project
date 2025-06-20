@@ -248,3 +248,28 @@ hourly_upper_outputs )
 np. save (os. path . join ( output_data_dir , ’ hourly_surface_outputs .npy ’),
 hourly_surface_outputs )
 ```
+
+## 📊 Résultats
+
+**Évaluation des variables**
+
+- Les prévisions de température et de vent de Pangu-Weather sont proches des données ERA5
+- MAE et RMSE utilisés comme métriques d’évaluation
+
+![t2 globale](pangu_data/t2_pangu.png)
+📍 _Figure : Température globale à 2 m – Pangu vs ERA5 à la fin de la simulation (H-24)_
+
+![mae t2](pangu_data/mae_plot/mae_t2m.gif)
+📍 \_Figure : MAE horaire pour la température globale à 2 m
+
+**Comparaison avec la Station de Londres**
+
+- Données de la station météo de Londres (43.03°N, 81.15°O avec une élevation de 278 m)
+- Comparaison des T2 et WS10 avec les modèles WRF et Pangu
+- WRF-GFS reproduit mieux les températures diurnes ; Pangu sous-estime les pics de vent
+
+|    Vitesse du vent à 10 m     |     Température à 2 m     |
+| :---------------------------: | :-----------------------: |
+| ![ws10 london](comp_ws10.png) | ![t2 london](comp_t2.png) |
+
+📍 _Figure : Comparaison des courbes de la vitesse du vent à 10 m et de la température à 2 m avec les données de la station de Londres_

@@ -16,7 +16,7 @@ Original file is located at
 import cdsapi
 import numpy as np
 
-c = cdsapi.Client(url= 'https://cds.climate.copernicus.eu/api', key='45b09982-33de-4d2c-b00c-36eff7c85640')
+c = cdsapi.Client(url= '', key='')
 
 # Request ERA5 data
 c.retrieve(
@@ -122,7 +122,7 @@ print("Data saved as input_upper.npy")
 import cdsapi
 import numpy as np
 
-c = cdsapi.Client(url= 'https://cds.climate.copernicus.eu/api', key='45b09982-33de-4d2c-b00c-36eff7c85640')
+c = cdsapi.Client(url= '', key='')
 
 # Request surface data from 06:00 UTC on May 20 to 05:00 UTC on May 21
 c.retrieve(

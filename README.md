@@ -260,9 +260,9 @@ hourly_surface_outputs )
 📍 _Figure : Température globale à 2 m – Pangu vs ERA5 à la fin de la simulation (H-24)_
 
 ![mae t2](pangu_data/mae_plot/mae_t2m.gif)
-📍 \_Figure : MAE horaire pour la température globale à 2 m
+📍 _Figure : MAE horaire pour la température globale à 2 m_
 
-**Comparaison avec la Station de Londres**
+**Comparaison avec la Station de London**
 
 - Données de la station météo de Londres (43.03°N, 81.15°O avec une élevation de 278 m)
 - Comparaison des T2 et WS10 avec les modèles WRF et Pangu
@@ -272,4 +272,67 @@ hourly_surface_outputs )
 | :---------------------------: | :-----------------------: |
 | ![ws10 london](comp_ws10.png) | ![t2 london](comp_t2.png) |
 
-📍 _Figure : Comparaison des courbes de la vitesse du vent à 10 m et de la température à 2 m avec les données de la station de Londres_
+📍 _Figure : Comparaison des courbes de la vitesse du vent à 10 m et de la température à 2 m avec les données de la station de London_
+
+![rmse](rmse_comp.png)  
+📍 _Figure : Courbes du RMSE comparant Pangu-Weather et WRF à la station météo de Londres (T2 et WS10) et aux données ERA5 (U, V et T à 925 hPa)_
+
+**Structure de la Brise de Lac**
+
+- Les deux modèles capturent l’apparition (~16h00 UTC) et le pic (~19h00 UTC) de la brise
+- WRF montre des effets plus fins grâce à sa résolution
+- Pangu capte les zones de convergence en accord avec les observations radar
+
+|     Température à 2 m avec vent à 10 m (WRF)     | Température à 2 m avec vent à 10 m (Pangu)  |
+| :----------------------------------------------: | :-----------------------------------------: |
+| ![ws10 london](era5_init/t2_ws10/t2_ws10wrf.gif) | ![t2 london](pangu_data/t2m_w10/t2_w10.gif) |
+
+📍 _Figure : Température à 2 m et vent à 10 m sur le sud de l’Ontario (WRF vs Pangu)_
+
+![div 500 london](pangu_data/divergence_plots/div925.gif)
+
+📍 _Figure : Divergence pour Pangu-Weather sur le sud de l’Ontario à 925 hPa (~500 m)_
+
+## ✅ Conclusion
+
+- **Pangu-Weather** est un modèle DLWP prometteur et efficace, avec une précision compétitive face à WRF.
+
+- WRF fournit des simulations plus fines mais coûteuses en ressources.
+
+- La brise de lac a contribué à l’intensification de l’orage ; les deux modèles l’ont représentée de manière cohérente.
+
+- Le choix des conditions initiales, des schémas physiques et des résolutions est crucial pour simuler la méso-échelle.
+
+## 📚 References
+
+- WRF v4.1: Skamarock et al. (2019)
+
+- Pangu-Weather: Bi et al. (2022, 2023)
+
+- ERA5 Data: Hersbach et al. (2020)
+
+- Environment and Climate Change Canada (ECCC) Radar & Weather Station Data
+
+## 📁 Files Included
+
+Full report: [Research report](https://drive.google.com/file/d/18WIzc1xXRRxHLh7H8w5d9mEJgL81MVek/view?usp=sharing)
+
+## 🧠 Future Work
+
+- Explore other DL models like GraphCast
+
+- Extend evaluation to more storm cases
+
+- Improve microphysics schemes in WRF
+
+- Incorporate real-time forecasting setups
+
+## 🔗 Links
+
+- [Pangu-Weather GitHub (Huawei)](https://github.com/198808xc/Pangu-Weather)
+
+- [ERA5 Copernicus Data Portal](https://www.ecmwf.int/en/forecasts/dataset/ecmwf-reanalysis-v5)
+
+- [ECCC Radar Portal](https://climate.weather.gc.ca/radar/index_e.html)
+
+This work was conducted as part of a research initiative focused on operational mesoscale weather forecasting and deep learning applications in atmospheric science.

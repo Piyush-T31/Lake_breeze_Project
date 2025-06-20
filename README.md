@@ -6,7 +6,6 @@
 
 ## 🇺🇸 English Version
 
-
 Author: [Piyush Teeloku](https://www.linkedin.com/in/piyush-teeloku/)  
 Email: teelokup@gmail.com  
 GitHub: [@Piyush-T31](https://github.com/Piyush-T31)
@@ -28,6 +27,7 @@ To assess how lake-breeze circulations impact convective storm development, and 
 ## 🌊 Case Study
 
 A storm event on **May 20, 2024** was analyzed:
+
 - Storm tracks were evaluated using ECCC radar data.
 - Specific lake-breeze effects around **Lake Huron**, **Lake Erie**, **Lake Ontario**, and **Lake St. Clair** were examined.
 
@@ -47,11 +47,11 @@ A storm event on **May 20, 2024** was analyzed:
 - **Output Interval:** 30 minutes
 
 ![WRF nested domain](High_res/wps_show_dom.png)
-📍_Figure: WRF nested domain setup_  
+📍 _Figure: WRF nested domain setup_  
 ![WRF T2 ws10](era5_init/t2_ws10/t2_ws10wrf.gif)
-📍_Figure: WRF surface temperature at 2m and wind field plots at 10 m_  
+📍 _Figure: WRF surface temperature at 2m and wind field plots at 10 m_  
 ![WRF w500 ws500](era5_init/W_500/w500.gif)
-📍_Figure: Vertical wind plot at 500 m with wind field plots at 500 m_  
+📍 _Figure: Vertical wind plot at 500 m with wind field plots at 500 m_
 
 ### Pangu-Weather Model
 
@@ -96,24 +96,32 @@ hourly_upper_outputs )
 np. save (os. path . join ( output_data_dir , ’ hourly_surface_outputs .npy ’),
 hourly_surface_outputs )
 ```
+
 ---
 
 ## 📊 Results
 
 **Variable Validation**
+
 - Pangu-Weather’s temperature and wind forecasts were visually and statistically close to ERA5 reanalysis
-- Mean Absolute Error (MAE) was used for evaluation
+- Mean Absolute Error (MAE) and Root Mean Square Error (RMSE) were used for evaluation
 
 ![t2 mae gif](pangu_data/t2_pangu.png)
-📍 _Figure: Global temperature at 2m - Pangu vs ERA5 at the end of simulation (H-24)_  
+📍 _Figure: Global temperature at 2m - Pangu vs ERA5 at the end of simulation (H-24)_
 
 ![t2 mae gif](pangu_data/mae_plot/mae_t2m.gif)
-📍 _Figure: Hourly MAE for global temperature at 2m_  
+📍 _Figure: Hourly MAE for global temperature at 2m_
 
+**Local Station Comparison**
+-Data from London Weather Station (43.03°N, 81.15°W and 278 m elevation) was used
+-Compared T2 and WS10 from observations vs WRF and Pangu-Weather
+-WRF-GFS matched afternoon temperatures best; Pangu underestimated wind peaks
 
+|       Wind speed at 10m       |     Temperature at 2m     |
+| :---------------------------: | :-----------------------: |
+| ![ws10 london](comp_ws10.png) | ![t2 london](comp_t2.png) |
 
-
-
+📍 _Figure: Wind speed at 10m and temperature at 2m plots compared to London station data_
 
 ## 🇫🇷 Version Française
 
@@ -140,6 +148,7 @@ Ce dépôt présente une étude comparative entre deux modèles de prévision m�
 ## 🌊 Étude de Cas
 
 L’événement orageux du **20 mai 2024** a été analysé :
+
 - Les trajectoires des orages ont été étudiées à l’aide des radars d’ECCC.
 - Les effets spécifiques de brise de lac autour des **lacs Huron**, **Érié**, **Ontario** et **St. Clair** ont été examinés.
 
@@ -159,7 +168,7 @@ L’événement orageux du **20 mai 2024** a été analysé :
 
 📍 _Figure : Configuration des domaines WRF_  
 📍 _Figure : Champs de température de surface et de vent_  
-📍 _Figure : Vents verticaux à 500 m et 2 km_  
+📍 _Figure : Vents verticaux à 500 m et 2 km_
 
 ### Modèle Pangu-Weather
 
@@ -203,4 +212,3 @@ hourly_upper_outputs )
 np. save (os. path . join ( output_data_dir , ’ hourly_surface_outputs .npy ’),
 hourly_surface_outputs )
 ```
-

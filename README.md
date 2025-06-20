@@ -113,15 +113,25 @@ hourly_surface_outputs )
 📍 _Figure: Hourly MAE for global temperature at 2m_
 
 **Local Station Comparison**
--Data from London Weather Station (43.03°N, 81.15°W and 278 m elevation) was used
--Compared T2 and WS10 from observations vs WRF and Pangu-Weather
--WRF-GFS matched afternoon temperatures best; Pangu underestimated wind peaks
+
+- Data from London Weather Station (43.03°N, 81.15°W and 278 m elevation) was used
+- Compared T2 and WS10 from observations vs WRF and Pangu-Weather
+- WRF-GFS matched afternoon temperatures best; Pangu underestimated wind peaks
 
 |       Wind speed at 10m       |     Temperature at 2m     |
 | :---------------------------: | :-----------------------: |
 | ![ws10 london](comp_ws10.png) | ![t2 london](comp_t2.png) |
 
 📍 _Figure: Wind speed at 10m and temperature at 2m plots compared to London station data_
+
+![rmse](rmse_comp.png)
+📍 _Figure: RMSE plots comparing Pangu-Weather station and WRF to London Weather station (T2 and WS10) and ERA5 data (U, V and T at 925 hPA)_
+
+**Lake-Breeze Structure Comparison**
+
+- Both models captured lake breeze onset (~16:00 UTC), peaking around 19:00 UTC
+- WRF showed finer lake breeze effects due to higher spatial resolution
+- Pangu-Weather showed strong convergence zones consistent with radar, despite lower resolution
 
 ## 🇫🇷 Version Française
 

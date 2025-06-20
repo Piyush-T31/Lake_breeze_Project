@@ -141,6 +141,7 @@ hourly_surface_outputs )
 📍 _Figure: T2 and wind at 10 m over Southern Ontario (WRF vs Pangu)_
 
 ![div 500 london](pangu_data/divergence_plots/div925.gif)
+
 📍 _Figure: Divergence for Pangu-Weather over Southern Ontario at 925hPA (~500 m)_
 
 ## ✅ Conclusion
@@ -183,6 +184,7 @@ L’événement orageux du **20 mai 2024** a été analysé :
 - Les effets spécifiques de brise de lac autour des **lacs Huron**, **Érié**, **Ontario** et **St. Clair** ont été examinés.
 
 ![Images radar](radar/radar.gif)
+
 📍 _Figure : Images radar de 6 p.m à 12 a.m UTC (20 mai 2024)_
 
 ---
@@ -197,9 +199,12 @@ L’événement orageux du **20 mai 2024** a été analysé :
 - **Spin-up :** 12 heures
 - **Sortie toutes les 30 minutes**
 
-📍 _Figure : Configuration des domaines WRF_  
-📍 _Figure : Champs de température de surface et de vent_  
-📍 _Figure : Vents verticaux à 500 m et 2 km_
+![WRF nested domain](High_res/wps_show_dom.png)
+📍 _Figure : Configuration des domaines WRF_
+![WRF T2 ws10](era5_init/t2_ws10/t2_ws10wrf.gif)
+📍 _Figure : Température de surface WRF à 2 m et champs de vent à 10 m_
+![WRF w500 ws500](era5_init/W_500/w500.gif)
+📍 _Figure : Vent vertical à 500 m avec champs de vent à 500 m_
 
 ### Modèle Pangu-Weather
 
@@ -207,8 +212,8 @@ L’événement orageux du **20 mai 2024** a été analysé :
 - Entraîné sur 43 ans de données ERA5
 - Utilise une agrégation temporelle hiérarchique (modèles de 1h, 3h, 6h, 24h)
 - Inférence réalisée avec ONNX sur CPU et GPU
-
-📍 _Figure : Schéma du modèle 3DEST_
+  ![3dest](pangu_data/3dest.png)
+  📍 _Figure : Schéma du modèle 3DEST_
 
 ### Script d’Inférence (Python)
 

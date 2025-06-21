@@ -73,18 +73,16 @@ hourly_upper_outputs = []
 hourly_surface_outputs = []
 input_6 , input_surface_6 = input , input_surface
 input_1, input_surface_1 = input , input_surface
-for i in range (24): # 1- day forecast with hourly timesteps
-if (i + 1) \% 6 == 0: # Every 6 hours run the 6- hour model
-11
-output , output_surface = ort_session_6 . run(None , {’input ’: input_6 , ’
-input_surface ’: input_surface_6 })
-input_6 , input_surface_6 = output , output_surface
-else : # Otherwise , run the 1- hour model
-output , output_surface = ort_session_1 . run(None , {’input ’: input , ’
-input_surface ’: input_surface })
+  for i in range (24): # 1- day forecast with hourly timesteps
+      if (i + 1) \% 6 == 0: # Every 6 hours run the 6- hour model
+      output , output_surface = ort_session_6 . run(None , {’input ’: input_6 , ’
+      input_surface ’: input_surface_6 })
+      input_6 , input_surface_6 = output , output_surface
+      else : # Otherwise , run the 1- hour model
+  output , output_surface = ort_session_1 . run(None , {’input ’: input , ’
+  input_surface ’: input_surface })
 # Aggregate outputs
-input , input_surface = output , output_surface # Use the 1 - hour model output as
-the base
+input , input_surface = output , output_surface # Use the 1 - hour model output as the base
 # Append to lists
 hourly_upper_outputs . append ( output )
 hourly_surface_outputs . append ( output_surface )
@@ -224,18 +222,16 @@ hourly_upper_outputs = []
 hourly_surface_outputs = []
 input_6 , input_surface_6 = input , input_surface
 input_1, input_surface_1 = input , input_surface
-for i in range (24): # 1- day forecast with hourly timesteps
-if (i + 1) \% 6 == 0: # Every 6 hours run the 6- hour model
-11
-output , output_surface = ort_session_6 . run(None , {’input ’: input_6 , ’
-input_surface ’: input_surface_6 })
-input_6 , input_surface_6 = output , output_surface
-else : # Otherwise , run the 1- hour model
-output , output_surface = ort_session_1 . run(None , {’input ’: input , ’
-input_surface ’: input_surface })
+  for i in range (24): # 1- day forecast with hourly timesteps
+      if (i + 1) \% 6 == 0: # Every 6 hours run the 6- hour model
+      output , output_surface = ort_session_6 . run(None , {’input ’: input_6 , ’
+      input_surface ’: input_surface_6 })
+      input_6 , input_surface_6 = output , output_surface
+      else : # Otherwise , run the 1- hour model
+  output , output_surface = ort_session_1 . run(None , {’input ’: input , ’
+  input_surface ’: input_surface })
 # Aggregate outputs
-input , input_surface = output , output_surface # Use the 1 - hour model output as
-the base
+input , input_surface = output , output_surface # Use the 1 - hour model output as the base
 # Append to lists
 hourly_upper_outputs . append ( output )
 hourly_surface_outputs . append ( output_surface )
